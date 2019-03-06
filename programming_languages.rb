@@ -3,7 +3,7 @@ def reformat_languages(languages)
   new_hash = {}
   languages.each do |style, lang|
     lang.each do |name, type|
-      puts "#{name} is a(n) #{type}"
+      name["style"] = style
     end
   end
 end
