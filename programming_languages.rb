@@ -6,8 +6,8 @@ def reformat_languages(languages)
       new_hash[name] = type
       new_hash[name][:style] = []
       if style == :oo and name == :javascript
-        puts "Yay"
-        new_hash[name][:style].push(style)
+
+        new_hash[name][:style].push(:oo)
       end
       new_hash[name][:style].push(style)
     end
