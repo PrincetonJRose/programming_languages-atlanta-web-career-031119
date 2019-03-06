@@ -5,7 +5,8 @@ def reformat_languages(languages)
     lang.each do |name, type|
       new_hash[name] = type
       new_hash[name][:style] = []
-      if name == :javascript and style == :oo
+      if style == :oo and name == :javascript
+        puts "Yay"
         new_hash[name][:style].push(style)
       end
       new_hash[name][:style].push(style)
